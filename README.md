@@ -1,4 +1,26 @@
 # MODIFIED BY ME
+- Set to Maximum SPS
+
+usage
+```
+#include <Wire.h>
+#include <Adafruit_ADS1015.h>
+Adafruit_ADS1115 ads;
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+  ads.begin();
+  Wire.setClock(400000);
+}
+
+void loop() {
+  int16_t adc0;
+  adc0 = ads.readADC_SingleEnded(0);
+  Serial.println(adc0);
+  delay(100);
+}
+```
+
 # Adafruit_ADS1015 ![Build Status](https://github.com/adafruit/Adafruit_ADS1X15/workflows/Arduino%20Library%20CI/badge.svg)
 
 Driver for TI's ADS1X15: 12 and 16-bit Differential or Single-Ended ADC with PGA and Comparator
