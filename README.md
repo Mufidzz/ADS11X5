@@ -1,3 +1,4 @@
+# MODIFIED BY ME
 # Adafruit_ADS1015 ![Build Status](https://github.com/adafruit/Adafruit_ADS1X15/workflows/Arduino%20Library%20CI/badge.svg)
 
 Driver for TI's ADS1X15: 12 and 16-bit Differential or Single-Ended ADC with PGA and Comparator
